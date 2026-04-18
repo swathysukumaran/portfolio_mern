@@ -1,6 +1,7 @@
 import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { cn } from "@/lib/utils";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 const Hero = () => {
   return (
     <>
@@ -19,7 +20,7 @@ const Hero = () => {
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
-      <div className="relative flex h-screen w-full items-center justify-center bg-white dark:bg-bg">
+      <div className=" flex h-screen w-full items-center justify-center bg-white dark:bg-bg absolute top-0 left-0">
         <div
           className={cn(
             "absolute inset-0",
@@ -31,6 +32,18 @@ const Hero = () => {
         {/* Radial gradient for the container to give a faded look */}
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-bg" />
       </div>
+      <div className="flex justify-center relative my-20 z-10">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] items-center justify-center">
+          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+            Full Stack Developer
+          </h2>
+        </div>
+      </div>
+      <TextGenerateEffect
+        className="text-center text-[40px] md:text-5xl lg:text-6xl"
+        words="I build modern web applications with clean design and thoughtful user experience."
+      />
+      <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"></p>
     </>
   );
 };
