@@ -2,6 +2,8 @@ import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 const Hero = () => {
   return (
     <>
@@ -47,6 +49,13 @@ const Hero = () => {
         That could be fixing a bug, improving a layout, or building something
         from scratch. I enjoy the process just as much as the result.
       </p>
+      <a href="#about">
+        <MagicButton
+          title="Show my Work"
+          icon={<FaLocationArrow />}
+          position="right"
+        />
+      </a>
     </>
   );
 };
