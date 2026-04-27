@@ -41,9 +41,12 @@ const Hero = () => {
       </div>
       <TextGenerateEffect
         className="text-center text-[40px] md:text-5xl lg:text-6xl"
-        words="I build modern web applications with clean design and thoughtful user experience."
+        words="I like figuring things out and making them work better."
       />
-      <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"></p>
+      <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+        That could be fixing a bug, improving a layout, or building something
+        from scratch. I enjoy the process just as much as the result.
+      </p>
     </>
   );
 };
